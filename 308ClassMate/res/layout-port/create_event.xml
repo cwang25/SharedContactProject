@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dateCreateEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="13dp"
+            android:text="Date: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/backCreateEvent"
+            android:layout_alignRight="@+id/nextCreateEvent"
+            android:layout_below="@+id/dateCreateEvent"
+            android:orientation="vertical" >
+
+            <DatePicker
+                android:id="@+id/datePickerCreateEvent"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timeCreateEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateCreateEvent"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="19dp"
+            android:text="When: "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_below="@+id/timeCreateEvent"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/locationCreateEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/timeCreateEvent"
+            android:layout_below="@+id/timePicker1"
+            android:layout_marginTop="16dp"
+            android:text="Where: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/nextCreateEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/backCreateEvent"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/createEvenTextInput"
+            android:layout_alignParentBottom="true"
+            android:text="Back" />
+
+        <EditText
+            android:id="@+id/createEvenTextInput"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/locationCreateEvent"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/editReceiptCreateEvenbtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/nextCreateEvent"
+            android:text="Edit Recipents" />
+
+    </RelativeLayout>
+
+</ScrollView>

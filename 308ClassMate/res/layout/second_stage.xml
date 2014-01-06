@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/trollText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Let me ask you a question, is your megic secret number a odd number or even number?"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/even"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="39dp"
+        android:text="Even" />
+
+    <Button
+        android:id="@+id/odd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/even"
+        android:layout_alignBottom="@+id/even"
+        android:layout_toLeftOf="@+id/even"
+        android:text="Odd" />
+
+</RelativeLayout>

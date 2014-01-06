@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/contactInfoBdayTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/contactInfoNameTag"
+        android:layout_below="@+id/contactInfoNameTag"
+        android:layout_marginTop="21dp"
+        android:text="BDay: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoBday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactInfoBdayTag"
+        android:layout_alignLeft="@+id/contactInfoName"
+        android:text="07/10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoPhoneTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoBdayTag"
+        android:layout_below="@+id/contactInfoBdayTag"
+        android:layout_marginTop="21dp"
+        android:text="Phone:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/contactInfoPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactInfoPhoneTag"
+        android:layout_alignLeft="@+id/contactInfoBday"
+        android:text="0939033858"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoEmailTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoPhoneTag"
+        android:layout_below="@+id/contactInfoPhoneTag"
+        android:layout_marginTop="21dp"
+        android:text="E-mail: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoEmailTag"
+        android:layout_below="@+id/contactInfoEmailTag"
+        android:text="s0918819012@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/contactInfoBackbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/contactInfoCallbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactInfoEmail"
+        android:layout_marginTop="15dp"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/contactInfoSendTextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactInfoCallbtn"
+        android:layout_marginTop="10dp"
+        android:text="Text" />
+
+    <Button
+        android:id="@+id/contactInfoEditbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/contactInfoBackbtn"
+        android:layout_alignBottom="@+id/contactInfoBackbtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Edit" />
+
+    <CheckBox
+        android:id="@+id/pickedContactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="選取" />
+
+    <TextView
+        android:id="@+id/contactInfoNameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pickedContactInfo"
+        android:layout_marginLeft="12dp"
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contactInfoBdayTag"
+        android:layout_toRightOf="@+id/contactInfoNameTag"
+        android:text="王啟翰"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:id="@+id/photoContactInfo"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignRight="@+id/contactInfoEditbtn"
+        android:layout_below="@+id/pickedContactInfo"
+        android:src="@drawable/s12" />
+
+</RelativeLayout>

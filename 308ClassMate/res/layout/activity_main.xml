@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/quitMain"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="29dp"
+        android:text="Quit" />
+
+    <Button
+        android:id="@+id/createEventbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quitMain"
+        android:layout_alignBottom="@+id/quitMain"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:text="Hold Reunion" />
+
+    <Button
+        android:id="@+id/sendGroupSMSbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/createEventbtn"
+        android:layout_alignRight="@+id/createEventbtn"
+        android:layout_marginBottom="25dp"
+        android:text="Send Group Message" />
+
+    <Button
+        android:id="@+id/syncSpreadSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quitMain"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="Sync Contact List" />
+
+    <ListView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sendGroupSMSbtn"
+        android:layout_alignLeft="@+id/syncSpreadSheet"
+        android:layout_alignRight="@+id/sendGroupSMSbtn"
+        android:layout_below="@+id/syncSpreadSheet" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/premadeTextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/syncSpreadSheet"
+        android:layout_alignRight="@+id/scrollView1"
+        android:text="Saved Text" />
+
+</RelativeLayout>

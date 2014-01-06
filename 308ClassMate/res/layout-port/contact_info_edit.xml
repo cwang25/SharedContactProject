@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/contactInfoBdayTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/contactInfoNameTag"
+        android:layout_below="@+id/contactInfoNameTag"
+        android:layout_marginTop="21dp"
+        android:text="生日: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoPhoneTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoBdayTag"
+        android:layout_below="@+id/contactInfoBdayTag"
+        android:layout_marginTop="21dp"
+        android:text="手機: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/contactInfoEmailTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoPhoneTag"
+        android:layout_below="@+id/contactInfoPhoneTag"
+        android:layout_marginTop="21dp"
+        android:text="E-mail: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/contactEditBackbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoEmailTag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/contactInfoNameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:text="名子: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/contactEditSavebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contactEditBackbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:text="儲存" />
+
+    <EditText
+        android:id="@+id/contactEditEmailInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactInfoEmailTag"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contactInfoEmailTag"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="s0918819012@hotmail.com"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/contactEditPhoneInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactInfoPhoneTag"
+        android:layout_toRightOf="@+id/contactInfoPhoneTag"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="0939033858"
+        android:textSize="35dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/contactEditBdayInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactInfoBdayTag"
+        android:layout_alignRight="@+id/contactEditName"
+        android:layout_toRightOf="@+id/contactInfoBdayTag"
+        android:ems="10"
+        android:inputType="date"
+        android:text="07/10"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/contactEditName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contactInfoNameTag"
+        android:layout_toLeftOf="@+id/contactEditePhoto"
+        android:layout_toRightOf="@+id/contactInfoNameTag"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="王啟翰"
+        android:textSize="35dp" />
+
+    <ImageView
+        android:id="@+id/contactEditePhoto"
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/contactInfoNameTag"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/s12" />
+
+</RelativeLayout>

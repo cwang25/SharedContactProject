@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/backTextgeneratorDetail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/groupTextgeneratorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/backTextgeneratorDetail"
+        android:layout_alignBottom="@+id/backTextgeneratorDetail"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="寄給同學" />
+
+    <Button
+        android:id="@+id/copyTextgeneratorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/backTextgeneratorDetail"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/groupTextgeneratorDetail"
+        android:text="複製內容" />
+
+    <Button
+        android:id="@+id/deletTextgeneratorDetail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/backTextgeneratorDetail"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="刪除" />
+
+    <Button
+        android:id="@+id/saveTextgeneratorDetail"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deletTextgeneratorDetail"
+        android:layout_alignBottom="@+id/deletTextgeneratorDetail"
+        android:layout_alignRight="@+id/groupTextgeneratorDetail"
+        android:text="儲存" />
+
+    <TextView
+        android:id="@+id/titleTagTextgeneratorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/deletTextgeneratorDetail"
+        android:layout_alignRight="@+id/backTextgeneratorDetail"
+        android:layout_below="@+id/deletTextgeneratorDetail"
+        android:layout_marginTop="20dp"
+        android:text="主旨: " />
+
+    <EditText
+        android:id="@+id/titleEdittextgeneratorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleTagTextgeneratorDetail"
+        android:layout_alignRight="@+id/saveTextgeneratorDetail"
+        android:layout_below="@+id/titleTagTextgeneratorDetail"
+        android:ems="10"
+        android:hint="Title of the text message"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/contentTextgeneratorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleEdittextgeneratorDetail"
+        android:layout_below="@+id/titleEdittextgeneratorDetail"
+        android:layout_marginTop="19dp"
+        android:text="內容: " />
+
+    <EditText
+        android:id="@+id/contentEditTextgeneratorDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/groupTextgeneratorDetail"
+        android:layout_alignLeft="@+id/contentTextgeneratorDetail"
+        android:layout_alignRight="@+id/titleEdittextgeneratorDetail"
+        android:layout_below="@+id/contentTextgeneratorDetail"
+        android:ems="10"
+        android:hint="Content of the text"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
